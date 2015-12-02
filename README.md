@@ -1,10 +1,51 @@
 # socials
 Social icons
 
-Open *demo.html* to see a list of all the glyphs in your font along with their codes/ligatures.
+## Preview
+Open **demo.html** to see a list of all the glyphs in your font along with their codes/ligatures.
 
-To use the generated font in desktop programs, you can install the TTF font. In order to copy the character associated with each icon, refer to the text box at the bottom right corner of each glyph in demo.html. The character inside this text box may be invisible; but it can still be copied. See this guide for more info: https://icomoon.io/#docs/local-fonts
+## Usage
+HTML
+```html
+<div class="social-container">
+  <ul class="nav social-links-nav">
+    <li><a href="#" target="_blank" title="Follow us on Facebook"><span class="icon icon-facebook"></span></a>
+    </li>
+    <li><a href="#" target="_blank" title="Follow us on Twitter"><span class="icon icon-twitter"></span></a>
+    </li>
+    <li><a href="#" target="_blank" title="Follow our RSS feed"><span class="icon icon-rss"></span></a>
+    </li>
+    <li><a href="#" target="_blank" title="Follow our Mail RSS feed"><span class="icon icon-mail"></span></a>
+    </li>
+    <li><a href="#" target="_blank" title="Follow us on YouTube"><span class="icon icon-youtube"></span></a>
+    </li>
+    <li><a href="#" target="_blank" title="Follow us on GooglePlus"><span class="icon icon-googleplus"></span></a>
+    </li>
+  </ul>
+</div>
+```
 
-You won't need any of the files located under the *demo-files* directory when including the generated font in your own projects.
-
-You can import *selection.json* back to the IcoMoon app using the *Import Icons* button (or via Main Menu → Manage Projects) to retrieve your icon selection.
+Sass
+```sass
+.social-links-nav {
+  // include some clear fix helper here
+  // @include cf;
+  li {
+    float: left;
+  }
+  a {
+    display: block;
+  }
+  $icons-set: (
+    'facebook',
+    'twitter',
+    'rss',
+    'mail',
+    'youtube',
+    'googleplus'
+  );
+  @each $icon in $icons-set {
+    .icon-#{$icon} { @include social-icon-before($icon); }
+  }
+}
+```
