@@ -1,0 +1,56 @@
+$font-path: "../fonts" !default;
+
+@font-face {
+	font-family: 'socials';
+	src:url('#{$font-path}/socials.eot?9b3szo');
+	src:url('#{$font-path}/socials.eot?9b3szo#iefix') format('embedded-opentype'),
+		url('#{$font-path}/socials.ttf?9b3szo') format('truetype'),
+		url('#{$font-path}/socials.woff?9b3szo') format('woff'),
+		url('#{$font-path}/socials.svg?9b3szo#socials') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin social-icon($icon, $icons) {
+  @if ($icons == 'sc') {
+    font-family: 'socials';
+    content: map-get($sc-icons, $icon);
+  } @else {
+    font-family: sans-serif;
+  }
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin social-icon-before($icon, $padding: 0, $color: #000, $icons: 'sc') {
+  &:before {
+    @include icon($icon, $icons);
+    padding-right: $padding;
+    color: $color;
+  }
+}
+
+$sc-icons: (
+  'facebook-full': '\e900',
+  'facebook': '\e901',
+  'googleplus-full': '\e902',
+  'googleplus': '\e903',
+  'linkedin-full': '\e904',
+  'linkedin': '\e905',
+  'mail-full': '\e906',
+  'mail': '\e907',
+  'pinterest-full': '\e908',
+  'pinterest': '\e909',
+  'reddit-full': '\e90a',
+  'reddit': '\e90b',
+  'rss-full': '\e90c',
+  'rss': '\e90d',
+  'twitter-full': '\e90e',
+  'twitter': '\e90f',
+  'youtube-full': '\e910',
+  'youtube': '\e911'
+);
