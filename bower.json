@@ -1,0 +1,24 @@
+{
+  "name": "socials",
+  "version": "0.0.1",
+  "homepage": "https://github.com/desero/socials",
+  "authors": [
+    "desero <desero@desero.ro>"
+  ],
+  "description": "Social icons font",
+  "main": "bower.json",
+  "moduleType": [],
+  "keywords": [
+    "social",
+    "icons",
+    "font"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
