@@ -13,13 +13,17 @@ $social-icons-set: $social-icons;
 }
 
 @mixin social-icon-base() {
-  font-family: 'socials';
-  font-weight: normal;
-  font-style: normal;
-  display: inline-block;
-  text-decoration: inherit;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
+	font-family: 'socials' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 @mixin social-icon($icon, $model) {
@@ -45,36 +49,45 @@ $social-icons: (
   'facebook-naked': '\e904',
   'facebook-rounded': '\e905',
   'facebook-square': '\e906',
-  'googleplus-circle': '\e907',
-  'googleplus-naked': '\e908',
-  'googleplus-rounded': '\e909',
-  'googleplus-square': '\e90a',
-  'linkedin-circle': '\e90b',
-  'linkedin-naked': '\e90c',
-  'linkedin-rounded': '\e90d',
-  'linkedin-square': '\e90e',
-  'mail-circle': '\e90f',
-  'mail-naked': '\e910',
-  'mail-rounded': '\e911',
-  'mail-square': '\e912',
-  'pinterest-circle': '\e913',
-  'pinterest-naked': '\e914',
-  'pinterest-rounded': '\e915',
-  'pinterest-square': '\e916',
-  'reddit-circle': '\e917',
-  'reddit-naked': '\e918',
-  'reddit-rounded': '\e919',
-  'reddit-square': '\e91a',
-  'rss-circle': '\e91b',
-  'rss-naked': '\e91c',
-  'rss-rounded': '\e91d',
-  'rss-square': '\e91e',
-  'twitter-circle': '\e91f',
-  'twitter-naked': '\e920',
-  'twitter-rounded': '\e921',
-  'twitter-square': '\e922',
-  'youtube-circle': '\e923',
-  'youtube-naked': '\e924',
-  'youtube-rounded': '\e925',
-  'youtube-square': '\e926'
+  'github-circle': '\e907',
+  'github-naked': '\e908',
+  'github-rounded': '\e909',
+  'googleplus-circle': '\e90a',
+  'googleplus-naked': '\e90b',
+  'googleplus-rounded': '\e90c',
+  'googleplus-square': '\e90d',
+  'launchpad-circle': '\e90e',
+  'launchpad-naked': '\e90f',
+  'launchpad-rounded': '\e910',
+  'linkedin-circle': '\e911',
+  'linkedin-naked': '\e912',
+  'linkedin-rounded': '\e913',
+  'linkedin-square': '\e914',
+  'mail-circle': '\e915',
+  'mail-naked': '\e916',
+  'mail-rounded': '\e917',
+  'mail-square': '\e918',
+  'pinterest-circle': '\e919',
+  'pinterest-naked': '\e91a',
+  'pinterest-rounded': '\e91b',
+  'pinterest-square': '\e91c',
+  'reddit-circle': '\e91d',
+  'reddit-naked': '\e91e',
+  'reddit-rounded': '\e91f',
+  'reddit-square': '\e920',
+  'rss-circle': '\e921',
+  'rss-naked': '\e922',
+  'rss-rounded': '\e923',
+  'rss-square': '\e924',
+  'twitter-circle': '\e925',
+  'twitter-naked': '\e926',
+  'twitter-rounded': '\e927',
+  'twitter-square': '\e928',
+  'wordpress-circle': '\e929',
+  'wordpress-naked': '\e92a',
+  'wordpress-rounded': '\e92b',
+  'youtube-circle': '\e92c',
+  'youtube-naked': '\e92d',
+  'youtube-rounded': '\e92e',
+  'youtube-square': '\e92f'
 );
