@@ -12,9 +12,8 @@ $social-icons-set: $social-icons;
 	font-style: normal;
 }
 
-@mixin social-icon($icon, $model) {
+@mixin social-icon-base() {
   font-family: 'socials';
-  content: map-get($social-icons-set, $icon + $model);
   font-weight: normal;
   font-style: normal;
   display: inline-block;
@@ -23,9 +22,13 @@ $social-icons-set: $social-icons;
   -webkit-font-smoothing: antialiased;
 }
 
+@mixin social-icon($icon, $model) {
+	@include social-icon-base;
+  content: map-get($social-icons-set, $icon + '-' + $model);
+}
+
 // model: circle, naked, rounded, square
 // defaults to: square
-
 @mixin social-icon-before($icon, $padding: 0, $color: #000, $model: 'square') {
   &:before {
     @include social-icon($icon, $model);
