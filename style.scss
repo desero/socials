@@ -1,4 +1,5 @@
 $font-path: "../fonts" !default;
+$social-icons-set: $social-icons;
 
 @font-face {
 	font-family: 'socials';
@@ -13,7 +14,7 @@ $font-path: "../fonts" !default;
 
 @mixin social-icon($icon, $model) {
   font-family: 'socials';
-  content: map-get($icons, $icon + $model);
+  content: map-get($social-icons-set, $icon + $model);
   font-weight: normal;
   font-style: normal;
   display: inline-block;
@@ -27,13 +28,13 @@ $font-path: "../fonts" !default;
 
 @mixin social-icon-before($icon, $padding: 0, $color: #000, $model: 'square') {
   &:before {
-    @include icon($icon, $model);
+    @include social-icon($icon, $model);
     padding-right: $padding;
     color: $color;
   }
 }
 
-$icons: (
+$social-icons: (
   'container-circle': '\e900',
   'container-round': '\e901',
   'container-square': '\e902',
