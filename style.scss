@@ -11,13 +11,9 @@ $font-path: "../fonts" !default;
 	font-style: normal;
 }
 
-@mixin social-icon($icon, $icons) {
-  @if ($icons == 'sc') {
-    font-family: 'socials';
-    content: map-get($sc-icons, $icon);
-  } @else {
-    font-family: sans-serif;
-  }
+@mixin social-icon($icon, $model) {
+  font-family: 'socials';
+  content: map-get($icons, $icon + $model);
   font-weight: normal;
   font-style: normal;
   display: inline-block;
@@ -26,31 +22,55 @@ $font-path: "../fonts" !default;
   -webkit-font-smoothing: antialiased;
 }
 
-@mixin social-icon-before($icon, $padding: 0, $color: #000, $icons: 'sc') {
+// model: circle, naked, rounded, square
+// defaults to: square
+
+@mixin social-icon-before($icon, $padding: 0, $color: #000, $model: 'square') {
   &:before {
-    @include icon($icon, $icons);
+    @include icon($icon, $model);
     padding-right: $padding;
     color: $color;
   }
 }
 
-$sc-icons: (
-  'facebook-full': '\e900',
-  'facebook': '\e901',
-  'googleplus-full': '\e902',
-  'googleplus': '\e903',
-  'linkedin-full': '\e904',
-  'linkedin': '\e905',
-  'mail-full': '\e906',
-  'mail': '\e907',
-  'pinterest-full': '\e908',
-  'pinterest': '\e909',
-  'reddit-full': '\e90a',
-  'reddit': '\e90b',
-  'rss-full': '\e90c',
-  'rss': '\e90d',
-  'twitter-full': '\e90e',
-  'twitter': '\e90f',
-  'youtube-full': '\e910',
-  'youtube': '\e911'
+$icons: (
+  'container-circle': '\e900',
+  'container-round': '\e901',
+  'container-square': '\e902',
+  'facebook-circle': '\e903',
+  'facebook-naked': '\e904',
+  'facebook-rounded': '\e905',
+  'facebook-square': '\e906',
+  'googleplus-circle': '\e907',
+  'googleplus-naked': '\e908',
+  'googleplus-rounded': '\e909',
+  'googleplus-square': '\e90a',
+  'linkedin-circle': '\e90b',
+  'linkedin-naked': '\e90c',
+  'linkedin-rounded': '\e90d',
+  'linkedin-square': '\e90e',
+  'mail-circle': '\e90f',
+  'mail-naked': '\e910',
+  'mail-rounded': '\e911',
+  'mail-square': '\e912',
+  'pinterest-circle': '\e913',
+  'pinterest-naked': '\e914',
+  'pinterest-rounded': '\e915',
+  'pinterest-square': '\e916',
+  'reddit-circle': '\e917',
+  'reddit-naked': '\e918',
+  'reddit-rounded': '\e919',
+  'reddit-square': '\e91a',
+  'rss-circle': '\e91b',
+  'rss-naked': '\e91c',
+  'rss-rounded': '\e91d',
+  'rss-square': '\e91e',
+  'twitter-circle': '\e91f',
+  'twitter-naked': '\e920',
+  'twitter-rounded': '\e921',
+  'twitter-square': '\e922',
+  'youtube-circle': '\e923',
+  'youtube-naked': '\e924',
+  'youtube-rounded': '\e925',
+  'youtube-square': '\e926'
 );
