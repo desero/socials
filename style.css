@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'socials';
-	src:url('fonts/socials.eot?spn17m');
-	src:url('fonts/socials.eot?spn17m#iefix') format('embedded-opentype'),
-		url('fonts/socials.ttf?spn17m') format('truetype'),
-		url('fonts/socials.woff?spn17m') format('woff'),
-		url('fonts/socials.svg?spn17m#socials') format('svg');
+	src:url('fonts/socials.eot?g5axb8');
+	src:url('fonts/socials.eot?g5axb8#iefix') format('embedded-opentype'),
+		url('fonts/socials.ttf?g5axb8') format('truetype'),
+		url('fonts/socials.woff?g5axb8') format('woff'),
+		url('fonts/socials.svg?g5axb8#socials') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -54,118 +54,127 @@
 .icon-github-rounded:before {
 	content: "\e909";
 }
-.icon-googleplus-circle:before {
+.icon-github-square:before {
 	content: "\e90a";
 }
-.icon-googleplus-naked:before {
+.icon-googleplus-circle:before {
 	content: "\e90b";
 }
-.icon-googleplus-rounded:before {
+.icon-googleplus-naked:before {
 	content: "\e90c";
 }
-.icon-googleplus-square:before {
+.icon-googleplus-rounded:before {
 	content: "\e90d";
 }
-.icon-launchpad-circle:before {
+.icon-googleplus-square:before {
 	content: "\e90e";
 }
-.icon-launchpad-naked:before {
+.icon-launchpad-circle:before {
 	content: "\e90f";
 }
-.icon-launchpad-rounded:before {
+.icon-launchpad-naked:before {
 	content: "\e910";
 }
-.icon-linkedin-circle:before {
+.icon-launchpad-rounded:before {
 	content: "\e911";
 }
-.icon-linkedin-naked:before {
+.icon-launchpad-square:before {
 	content: "\e912";
 }
-.icon-linkedin-rounded:before {
+.icon-linkedin-circle:before {
 	content: "\e913";
 }
-.icon-linkedin-square:before {
+.icon-linkedin-naked:before {
 	content: "\e914";
 }
-.icon-mail-circle:before {
+.icon-linkedin-rounded:before {
 	content: "\e915";
 }
-.icon-mail-naked:before {
+.icon-linkedin-square:before {
 	content: "\e916";
 }
-.icon-mail-rounded:before {
+.icon-mail-circle:before {
 	content: "\e917";
 }
-.icon-mail-square:before {
+.icon-mail-naked:before {
 	content: "\e918";
 }
-.icon-pinterest-circle:before {
+.icon-mail-rounded:before {
 	content: "\e919";
 }
-.icon-pinterest-naked:before {
+.icon-mail-square:before {
 	content: "\e91a";
 }
-.icon-pinterest-rounded:before {
+.icon-pinterest-circle:before {
 	content: "\e91b";
 }
-.icon-pinterest-square:before {
+.icon-pinterest-naked:before {
 	content: "\e91c";
 }
-.icon-reddit-circle:before {
+.icon-pinterest-rounded:before {
 	content: "\e91d";
 }
-.icon-reddit-naked:before {
+.icon-pinterest-square:before {
 	content: "\e91e";
 }
-.icon-reddit-rounded:before {
+.icon-reddit-circle:before {
 	content: "\e91f";
 }
-.icon-reddit-square:before {
+.icon-reddit-naked:before {
 	content: "\e920";
 }
-.icon-rss-circle:before {
+.icon-reddit-rounded:before {
 	content: "\e921";
 }
-.icon-rss-naked:before {
+.icon-reddit-square:before {
 	content: "\e922";
 }
-.icon-rss-rounded:before {
+.icon-rss-circle:before {
 	content: "\e923";
 }
-.icon-rss-square:before {
+.icon-rss-naked:before {
 	content: "\e924";
 }
-.icon-twitter-circle:before {
+.icon-rss-rounded:before {
 	content: "\e925";
 }
-.icon-twitter-naked:before {
+.icon-rss-square:before {
 	content: "\e926";
 }
-.icon-twitter-rounded:before {
+.icon-twitter-circle:before {
 	content: "\e927";
 }
-.icon-twitter-square:before {
+.icon-twitter-naked:before {
 	content: "\e928";
 }
-.icon-wordpress-circle:before {
+.icon-twitter-rounded:before {
 	content: "\e929";
 }
-.icon-wordpress-naked:before {
+.icon-twitter-square:before {
 	content: "\e92a";
 }
-.icon-wordpress-rounded:before {
+.icon-wordpress-circle:before {
 	content: "\e92b";
 }
-.icon-youtube-circle:before {
+.icon-wordpress-naked:before {
 	content: "\e92c";
 }
-.icon-youtube-naked:before {
+.icon-wordpress-rounded:before {
 	content: "\e92d";
 }
-.icon-youtube-rounded:before {
+.icon-wordpress-square:before {
 	content: "\e92e";
 }
-.icon-youtube-square:before {
+.icon-youtube-circle:before {
 	content: "\e92f";
+}
+.icon-youtube-naked:before {
+	content: "\e930";
+}
+.icon-youtube-rounded:before {
+	content: "\e931";
+}
+.icon-youtube-square:before {
+	content: "\e932";
 }
 
